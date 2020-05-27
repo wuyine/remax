@@ -30,7 +30,7 @@ const platformAlias: any = {
 const defaultAlias = {
   id: 'id',
   role: 'role',
-  hoverClass: 'hover-class',
+  hoverClassName: 'hover-class',
   hoverStartTime: 'hover-start-time',
   hoverStayTime: 'hover-stay-time',
   className: 'class',
