@@ -18,6 +18,7 @@ export default class WebSocket {
 
   constructor(url: string) {
     this.readyState = ReadyState.CONNECTING;
+
     my.connectSocket({
       url,
     });

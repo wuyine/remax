@@ -10,11 +10,14 @@ module.exports = () => ({
     ]);
 
     config.plugin('plugin-devtools-webpack-inject-plugin').use(InjectPlugin, [
-      () => "import '@remax/plugin-devtools/lib/runtime.js';",
+      () => "import 'react-devtools-core';",
       {
         entryName: 'app',
         entryOrder: ENTRY_ORDER.First,
       },
     ]);
   },
+  registerRuntimePlugin() {
+    return require.resolve('./lib/runtime')
+  }
 });
